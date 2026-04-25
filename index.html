@@ -61,11 +61,11 @@
             <h1 class="hero-title">Everything you need to <span class="text-gradient">crack the exam</span></h1>
             <p class="hero-subtitle">Your one-stop AI platform for PYQs, mock tests, smart notes, and instant problem-solving.</p>
             
-            <div class="search-container">
+            <form class="search-container" action="https://iitbro.com/" method="GET">
                 <i class="ph ph-magnifying-glass search-icon"></i>
-                <input type="text" class="search-input" placeholder="Search for mock tests, notes, or ask your BRO...">
-                <button class="search-btn">Find</button>
-            </div>
+                <input type="text" name="q" class="search-input" placeholder="Ask your BRO a question..." required>
+                <button type="submit" class="search-btn">Ask</button>
+            </form>
 
             <div class="quick-chips">
                 <span>Trending:</span>
@@ -76,7 +76,121 @@
             </div>
         </section>
 
+        <!-- Flagship Features Section -->
+        <section class="flagship-features container">
+            
+            <!-- Ask BRO -->
+            <div class="feature-row">
+                <div class="feature-text">
+                    <div class="feature-icon gradient-icon-1"><i class="ph-fill ph-robot"></i></div>
+                    <h2>Stuck? Ask your BRO.</h2>
+                    <p class="feature-description">Experience the most advanced AI problem-solving tool designed for instant doubt clearance.</p>
+                    <ul class="feature-bullets">
+                        <li><i class="ph-bold ph-check"></i> Instant Step-by-Step Logic</li>
+                        <li><i class="ph-bold ph-check"></i> Drop & drag screenshots or text</li>
+                        <li><i class="ph-bold ph-check"></i> Works across all PCM subjects</li>
+                    </ul>
+                    <a href="https://iitbro.com/" class="btn btn-primary btn-large">Try Ask BRO <i class="ph-bold ph-arrow-right"></i></a>
+                </div>
+                <div class="feature-mockup">
+                    <div class="image-glow pink-glow"></div>
+                    <div class="app-window">
+                        <div class="app-header">
+                            <div class="window-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                            <div class="app-title"><i class="ph-fill ph-robot"></i> Ask BRO</div>
+                        </div>
+                        <div class="app-body chat-mockup">
+                            <div class="chat-bubble user-bubble">
+                                Hey BRO, how do I solve this tricky Integration by Parts question?
+                            </div>
+                            <div class="chat-bubble bot-bubble">
+                                <div class="bot-icon"><img src="iitbro-logo.png" alt="logo" class="tiny-logo"></div>
+                                <div class="bot-text">
+                                    <p>I can help with that!</p>
+                                    <p class="skeleton-text short"></p>
+                                    <p class="skeleton-text long"></p>
+                                    <p class="skeleton-text med"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <!-- PYQs -->
+            <div class="feature-row reverse">
+                <div class="feature-text">
+                    <div class="feature-icon gradient-icon-2"><i class="ph-fill ph-books"></i></div>
+                    <h2>The Ultimate PYQ Catalog.</h2>
+                    <p class="feature-description">Navigate a massive repository of chapter-wise and year-wise Previous Year Questions.</p>
+                    <ul class="feature-bullets">
+                        <li><i class="ph-bold ph-check"></i> Filter by exact chapters & concepts</li>
+                        <li><i class="ph-bold ph-check"></i> Official Answer Keys included</li>
+                        <li><i class="ph-bold ph-check"></i> Highly organized interface</li>
+                    </ul>
+                    <a href="https://iitbro.com/pyqs" class="btn btn-primary btn-large">Explore PYQs <i class="ph-bold ph-arrow-right"></i></a>
+                </div>
+                <div class="feature-mockup">
+                    <div class="image-glow blue-glow"></div>
+                    <div class="app-window flex-window">
+                        <div class="app-sidebar">
+                            <div class="sidebar-item active">Physics</div>
+                            <div class="sidebar-item">Maths</div>
+                            <div class="sidebar-item">Chemistry</div>
+                        </div>
+                        <div class="app-body grid-mockup">
+                            <div class="folder-card"><i class="ph-fill ph-folder" style="color: var(--accent-blue)"></i> JEE Adv 2023</div>
+                            <div class="folder-card"><i class="ph-fill ph-folder" style="color: var(--accent-blue)"></i> JEE Main 2023</div>
+                            <div class="folder-card"><i class="ph-fill ph-folder" style="color: var(--accent-blue)"></i> JEE Adv 2022</div>
+                            <div class="folder-card"><i class="ph-fill ph-folder" style="color: var(--accent-blue)"></i> JEE Main 2022</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mock Tests -->
+            <div class="feature-row">
+                <div class="feature-text">
+                    <div class="feature-icon" style="color: var(--accent-orange); background: rgba(245, 158, 11, 0.1); border: 1px solid rgba(245, 158, 11, 0.2);"><i class="ph-fill ph-exam"></i></div>
+                    <h2>Real Exam Feel.<br>Detailed Analysis.</h2>
+                    <p class="feature-description">Simulate the exact environment of JEE and other top exams with our comprehensive testing suite.</p>
+                    <ul class="feature-bullets">
+                        <li><i class="ph-bold ph-check"></i> Exact Exam UI simulation</li>
+                        <li><i class="ph-bold ph-check"></i> Granular performance analytics</li>
+                        <li><i class="ph-bold ph-check"></i> Benchmark against the best</li>
+                    </ul>
+                    <a href="https://iitbro.com/mock-test" class="btn btn-primary btn-large">Start a Mock Test <i class="ph-bold ph-arrow-right"></i></a>
+                </div>
+                <div class="feature-mockup">
+                    <div class="image-glow orange-glow"></div>
+                    <div class="app-window">
+                        <div class="app-header justify-between">
+                            <div class="test-title">Full Mock JEE Adv</div>
+                            <div class="test-timer"><i class="ph-bold ph-clock"></i> 02:45:12</div>
+                        </div>
+                        <div class="app-body dashboard-mockup">
+                            <div class="dashboard-top">
+                                <div class="score-card">
+                                    <div class="score-label">Current Score Prediction</div>
+                                    <div class="score-value">212<span class="score-total">/300</span></div>
+                                </div>
+                                <div class="accuracy-ring">
+                                    <div class="ring-circle">92%</div>
+                                </div>
+                            </div>
+                            <div class="graph-placeholder">
+                                <div class="bar bar-1"></div>
+                                <div class="bar bar-2"></div>
+                                <div class="bar bar-3"></div>
+                                <div class="bar bar-4"></div>
+                                <div class="bar bar-5"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
 
         <!-- Tools Hub Section -->
         <section class="hub-section" id="hub">
@@ -86,30 +200,7 @@
             </div>
 
             <div class="cards-grid" id="cardsGrid">
-                
-                <a href="https://iitbro.com/" class="glass-card feature-card highlight-card">
-                    <div class="card-glow"></div>
-                    <div class="card-icon gradient-icon-1"><i class="ph-fill ph-robot"></i></div>
-                    <h3>Ask BRO (AI)</h3>
-                    <p>Stuck on a problem? Drop a screenshot or type it out for an instant intelligent solution.</p>
-                    <div class="card-arrow"><i class="ph-bold ph-arrow-right"></i></div>
-                </a>
 
-                <a href="https://iitbro.com/pyqs" class="glass-card feature-card">
-                    <div class="card-glow"></div>
-                    <div class="card-icon"><i class="ph-fill ph-books"></i></div>
-                    <h3>PYQs Catalog</h3>
-                    <p>Extensive repository of Previous Year Questions, chapter-wise and year-wise.</p>
-                    <div class="card-arrow"><i class="ph-bold ph-arrow-right"></i></div>
-                </a>
-
-                <a href="https://iitbro.com/mock-test" class="glass-card feature-card">
-                    <div class="card-glow"></div>
-                    <div class="card-icon"><i class="ph-fill ph-exam"></i></div>
-                    <h3>Mock Test Series</h3>
-                    <p>Daily practice papers with real-time feedback and detailed performance analytics.</p>
-                    <div class="card-arrow"><i class="ph-bold ph-arrow-right"></i></div>
-                </a>
 
                 <a href="https://iitbro.com/past-year-papers" class="glass-card feature-card">
                     <div class="card-glow"></div>
