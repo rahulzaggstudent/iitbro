@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IITBro - The Ultimate Hub for Aspirants</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Ambient Background Effects -->
+    <div class="ambient-light light-1"></div>
+    <div class="ambient-light light-2"></div>
+
+    <div class="glow-cursor" id="glowCursor"></div>
+
+    <header class="navbar">
+        <div class="logo">
+            <img src="iitbro-logo.png" alt="IITBro Logo" class="logo-img">
+        </div>
+        <nav class="nav-links">
+            <a href="https://iitbro.com/">Ask BRO</a>
+            <div class="dropdown">
+                <button class="dropdown-btn">Practice <i class="ph ph-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="https://iitbro.com/pyqs">PYQs</a>
+                    <a href="https://iitbro.com/mock-test">Mock Tests</a>
+                    <a href="https://iitbro.com/past-year-papers">Past Papers</a>
+                    <a href="https://iitbro.com/notes">Notes</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown-btn">Tools <i class="ph ph-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="https://iitbro.com/predictor">Predictor</a>
+                    <a href="https://iitbro.com/score-calculator">Score Calc</a>
+                </div>
+            </div>
+            <a href="https://iitbro.com/events">Events</a>
+            <a href="https://iitbro.com/mentorx">MentorX</a>
+            <a href="https://iitbro.com/blog/">Blog</a>
+        </nav>
+        <div class="nav-actions">
+            <a href="https://whatsapp.com/channel/0029VbBkLcKKGGG8JPqsV92C" target="_blank" class="btn btn-primary"><i class="ph-fill ph-whatsapp-logo"></i> Join Community</a>
+        </div>
+        <div class="mobile-menu">
+            <i class="ph ph-list"></i>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-badge">Welcome to the future of learning 🚀</div>
+            <h1 class="hero-title">Everything you need to <span class="text-gradient">crack the exam</span></h1>
+            <p class="hero-subtitle">Your one-stop AI platform for PYQs, mock tests, smart notes, and instant problem-solving.</p>
+            
+            <div class="search-container">
+                <i class="ph ph-magnifying-glass search-icon"></i>
+                <input type="text" class="search-input" placeholder="Search for mock tests, notes, or ask your BRO...">
+                <button class="search-btn">Find</button>
+            </div>
+
+            <div class="quick-chips">
+                <span>Trending:</span>
+                <a href="https://iitbro.com/" class="chip"><i class="ph-fill ph-magic-wand"></i> Ask BRO</a>
+                <a href="https://iitbro.com/mock-test" class="chip"><i class="ph-bold ph-exam"></i> Mock Tests</a>
+                <a href="https://iitbro.com/pyqs" class="chip"><i class="ph-fill ph-stack"></i> PYQs</a>
+                <a href="https://iitbro.com/predictor" class="chip"><i class="ph-fill ph-chart-line-up"></i> Predictor</a>
+            </div>
+        </section>
+
+
+
+        <!-- Tools Hub Section -->
+        <section class="hub-section" id="hub">
+            <div class="section-header">
+                <h2>Explore the Hub</h2>
+                <p>Unlock all the tools designed by your seniors from IIT Bombay & IIIT Hyderabad</p>
+            </div>
+
+            <div class="cards-grid" id="cardsGrid">
+                
+                <a href="https://iitbro.com/" class="glass-card feature-card highlight-card">
+                    <div class="card-glow"></div>
+                    <div class="card-icon gradient-icon-1"><i class="ph-fill ph-robot"></i></div>
+                    <h3>Ask BRO (AI)</h3>
+                    <p>Stuck on a problem? Drop a screenshot or type it out for an instant intelligent solution.</p>
+                    <div class="card-arrow"><i class="ph-bold ph-arrow-right"></i></div>
+                </a>
+
+                <a href="https://iitbro.com/pyqs" class="glass-card feature-card">
+                    <div class="card-glow"></div>
+                    <div class="card-icon"><i class="ph-fill ph-books"></i></div>
+                    <h3>PYQs Catalog</h3>
+                    <p>Extensive repository of Previous Year Questions, chapter-wise and year-wise.</p>
+                    <div class="card-arrow"><i class="ph-bold ph-arrow-right"></i></div>
+                </a>
+
+                <a href="https://iitbro.com/mock-test" class="glass-card feature-card">
+                    <div class="card-glow"></div>
+                    <div class="card-icon"><i class="ph-fill ph-exam"></i></div>
+                    <h3>Mock Test Series</h3>
+                    <p>Daily practice papers with real-time feedback and detailed performance analytics.</p>
+                    <div class="card-arrow"><i class="ph-bold ph-arrow-right"></i></div>
+                </a>
+
+                <a href="https://iitbro.com/past-year-papers" class="glass-card feature-card">
+                    <div class="card-glow"></div>
+                    <div class="card-icon"><i class="ph-fill ph-files"></i></div>
+                    <h3>Past Year Papers</h3>
+                    <p>Download full official offline and online question papers with official answer keys.</p>
+                    <div class="card-arrow"><i class="ph-bold ph-arrow-right"></i></div>
+                </a>
+
+                <a href="https://iitbro.com/notes" class="glass-card feature-card">
+                    <div class="card-glow"></div>
+                    <div class="card-icon"><i class="ph-fill ph-notebook"></i></div>
+                    <h3>Smart Notes</h3>
+                    <p>Concise, topper-level revision notes to boost your last-minute preparations.</p>
+                    <div class="card-arrow"><i class="ph-bold ph-arrow-right"></i></div>
+                </a>
+
+                <a href="https://iitbro.com/predictor" class="glass-card feature-card">
+                    <div class="card-glow"></div>
+                    <div class="card-icon"><i class="ph-fill ph-chart-bar"></i></div>
+                    <h3>College Predictor</h3>
+                    <p>Data-driven algorithms to calculate your expected percentiles and college options.</p>
+                    <div class="card-arrow"><i class="ph-bold ph-arrow-right"></i></div>
+                </a>
+
+                <a href="https://iitbro.com/events" class="glass-card feature-card live-card">
+                    <div class="card-glow"></div>
+                    <div class="card-badge">Live</div>
+                    <div class="card-icon"><i class="ph-fill ph-broadcast"></i></div>
+                    <h3>Live Events</h3>
+                    <p>Join masterclasses, doubt sessions, and webinars hosted by industry experts.</p>
+                    <div class="card-arrow"><i class="ph-bold ph-arrow-right"></i></div>
+                </a>
+
+                <a href="https://iitbro.com/score-calculator" class="glass-card feature-card">
+                    <div class="card-glow"></div>
+                    <div class="card-icon"><i class="ph-fill ph-calculator"></i></div>
+                    <h3>Score Calculator</h3>
+                    <p>Input your responses and immediately calculate your estimated exam scores.</p>
+                    <div class="card-arrow"><i class="ph-bold ph-arrow-right"></i></div>
+                </a>
+
+                <a href="https://iitbro.com/mentorx" class="glass-card feature-card new-card">
+                    <div class="card-glow"></div>
+                    <div class="card-badge new">New</div>
+                    <div class="card-icon gradient-icon-2"><i class="ph-fill ph-users-three"></i></div>
+                    <h3>MentorX</h3>
+                    <p>Get personalized 1-on-1 guidance from top mentors currently at prestigious IITs.</p>
+                    <div class="card-arrow"><i class="ph-bold ph-arrow-right"></i></div>
+                </a>
+
+                <a href="https://iitbro.com/blog/" class="glass-card feature-card">
+                    <div class="card-glow"></div>
+                    <div class="card-icon"><i class="ph-fill ph-article"></i></div>
+                    <h3>Our Blog</h3>
+                    <p>Tips, strategies, and updates directly from the ultimate student community.</p>
+                    <div class="card-arrow"><i class="ph-bold ph-arrow-right"></i></div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Live Events Section -->
+        <section class="featured-embeds container" id="live-events-section">
+            <div class="section-header">
+                <h2>Live Sessions</h2>
+                <p>Join masterclasses, doubt sessions, and webinars hosted by industry experts.</p>
+            </div>
+            <div class="embed-card full-width">
+                <div class="embed-header" style="color: var(--accent-orange);">
+                    <i class="ph-fill ph-broadcast"></i>
+                    <h3>Upcoming Live Events</h3>
+                </div>
+                <div class="embed-container cropped">
+                    <!-- Replace src with actual Events embed URL or page -->
+                    <iframe src="https://iitbro.com/events" title="Live Events" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer-text">Built by your seniors from IIT Bombay & IIIT Hyderabad</p>
+        <p class="footer-copyright">Copyright © 2026 iitbro. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
